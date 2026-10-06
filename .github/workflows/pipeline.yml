@@ -12,11 +12,11 @@ jobs:
     runs-on: ubuntu-Latest
 
     steps:
-      -name: copy code into the runner machine
+      - name: copy code into the runner machine
         uses: actions/checkout@v4
 
       - name: set up Node.js runtime enviroment
-        uses: actione/setup-node@v4
+        uses: actions/setup-node@v4
         with:
           node-version: 20
           
